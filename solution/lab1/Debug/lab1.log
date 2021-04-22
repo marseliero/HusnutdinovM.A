@@ -1,0 +1,7 @@
+﻿  main.c
+  numB.c
+  scanNum.c
+  sumNum.c
+  Создание кода...
+C:\Documents\GitHub\HusnutdinovM.A\solution\lab1\numB.c(50): warning C4716: numB: должна возвращать значение
+  lab1.vcxproj -> C:\Documents\GitHub\HusnutdinovM.A\solution\Debug\lab1.exe

@@ -8,23 +8,26 @@ int main(void)
 	int k = 0;
 	int ch = 0;
 	FILE* infile;
-	if (fopen_s(&infile, "C:\\Users\\ÿ\\Desktop\\input.txt", "r") == 0);
-	for (i;!feof(infile);i++)
+	if (fopen_s(&infile, "C:\\Users\\ÿ\\Desktop\\input.txt", "r") == 0)
 	{
-		str[i] = fgetc(infile);
-		if (str[i] == 32)
+		for (i;!feof(infile);i++)
 		{
-			n = i - 1;
-			k = i - ch;
-			ch = -1;
-			if (str[k] == str[n])
+			str[i] = fgetc(infile);
+			if (str[i] == 32)
 			{
-				for (k;k < n + 1;k++)
-					putchar(str[k]);
-				printf(" ");
+				n = i - 1;
+				k = i - ch;
+				ch = -1;
+				if (str[k] == str[n])
+				{
+					for (k;k < n + 1;k++)
+						putchar(str[k]);
+					printf(" ");
+				}
 			}
+			ch = ch + 1;
 		}
-		ch = ch + 1;
+		fclose(infile);
 	}
 }
 

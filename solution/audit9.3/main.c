@@ -13,6 +13,6 @@ int main()
 			c = c - 32;
 			putchar(c);
 		}
-
+		fclose(infile);
 	}
 }
